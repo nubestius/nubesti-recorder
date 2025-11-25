@@ -1,4 +1,3 @@
-import * as crypto from "node:crypto";
 import { db } from "@cap/database";
 import {
 	organizationMembers,
@@ -181,19 +180,9 @@ app.get("/plan", withAuth, async (c) => {
 		}
 	}
 
-	let intercomHash = "";
-	const intercomSecret = serverEnv().INTERCOM_SECRET;
-	if (intercomSecret) {
-		intercomHash = crypto
-			.createHmac("sha256", intercomSecret)
-			.update(user?.id ?? "")
-			.digest("hex");
-	}
-
 	return c.json({
 		upgraded: isSubscribed,
 		stripeSubscriptionStatus: user.stripeSubscriptionStatus,
-		intercomHash: intercomHash,
 	});
 });
 

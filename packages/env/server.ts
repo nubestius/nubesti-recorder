@@ -112,7 +112,6 @@ function createServerEnv() {
 			VERCEL_AWS_ROLE_ARN: z.string().optional(),
 			POSTHOG_PERSONAL_API_KEY: z.string().optional(),
 			DUB_API_KEY: z.string().optional(),
-			INTERCOM_SECRET: z.string().optional(),
 
 			/// Ignore
 			NODE_ENV: z.string(),
