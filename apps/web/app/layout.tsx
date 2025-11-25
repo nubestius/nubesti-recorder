@@ -65,16 +65,16 @@ const defaultFont = localFont({
 });
 
 export const metadata: Metadata = {
-	title: "Cap — Beautiful screen recordings, owned by you.",
+	title: "Nubesti Recorder — Beautiful screen recordings, owned by you.",
 	description:
-		"Cap is the open source alternative to Loom. Lightweight, powerful, and cross-platform. Record and share in seconds.",
+		"Nubesti Recorder is a powerful screen recording tool. Lightweight, powerful, and cross-platform. Record and share in seconds.",
 	openGraph: {
-		title: "Cap — Beautiful screen recordings, owned by you.",
+		title: "Nubesti Recorder — Beautiful screen recordings, owned by you.",
 		description:
-			"Cap is the open source alternative to Loom. Lightweight, powerful, and cross-platform. Record and share in seconds.",
+			"Nubesti Recorder is a powerful screen recording tool. Lightweight, powerful, and cross-platform. Record and share in seconds.",
 		type: "website",
-		url: "https://cap.so",
-		images: ["https://cap.so/og.png"],
+		url: "https://recorder.nubesti.com",
+		images: ["https://recorder.nubesti.com/og.png"],
 	},
 };
 

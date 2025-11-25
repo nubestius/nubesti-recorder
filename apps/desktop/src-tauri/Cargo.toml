@@ -1,8 +1,8 @@
 [package]
-name = "cap-desktop"
+name = "nubesti-recorder-desktop"
 version = "0.3.84"
-description = "Beautiful screen recordings, owned by you."
-authors = ["you"]
+description = "Nubesti Recorder - Beautiful screen recordings, owned by you."
+authors = ["Nubesti"]
 edition = "2024"
 
 [lints]

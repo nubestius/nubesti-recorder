@@ -117,11 +117,11 @@ export const homepageCopy: HomePageCopy = {
 			default: {
 				title: "Beautiful, shareable screen recordings",
 				description:
-					"Cap is the open source alternative to Loom. Lightweight, powerful, and cross-platform. Record and share securely in seconds with custom S3 bucket support. Connect your own domain.",
+					"Nubesti Recorder is a powerful screen recording tool. Lightweight, powerful, and cross-platform. Record and share securely in seconds with custom S3 bucket support. Connect your own domain.",
 			},
 		},
 		cta: {
-			primaryButton: "Upgrade to Cap Pro",
+			primaryButton: "Upgrade to Nubesti Pro",
 			secondaryButton: "Download",
 			freeVersionText: "No credit card required. Get started for free.",
 			seeOtherOptionsText: "More download options",
@@ -181,7 +181,7 @@ export const homepageCopy: HomePageCopy = {
 					"See exactly how Cap works, contribute features you need, or self-host for complete control. Join a community of builders who believe great tools should be transparent, extensible, and respect their users.",
 			},
 			{
-				title: "Speed up your workflow with Cap AI",
+				title: "Speed up your workflow with Nubesti AI",
 				description:
 					"Auto-generated titles, summaries, clickable chapters, and transcriptions for every recording. AI features that actually save time instead of creating more work.",
 			},
@@ -222,7 +222,7 @@ export const homepageCopy: HomePageCopy = {
 		},
 		pro: {
 			badge: "Best value",
-			title: "Cap Pro",
+			title: "Nubesti Pro",
 			description:
 				"Everything in Desktop plus unlimited cloud features for seamless sharing and collaboration.",
 			features: [
@@ -252,14 +252,14 @@ export const homepageCopy: HomePageCopy = {
 		title: "Questions? We've got answers.",
 		items: [
 			{
-				question: "What is the difference between Cap Pro and Desktop License?",
+				question: "What is the difference between Nubesti Pro and Desktop License?",
 				answer:
-					"Cap Pro is a paid plan that includes all the features of the Desktop License plus cloud features for seamless sharing and collaboration. Desktop License grants you commercial usage rights for a single user.",
+					"Nubesti Pro is a paid plan that includes all the features of the Desktop License plus cloud features for seamless sharing and collaboration. Desktop License grants you commercial usage rights for a single user.",
 			},
 			{
 				question: "Is there a free version?",
 				answer:
-					"Yes! Cap is 100% free for personal use. You can record and share locally with Studio Mode. A paid plan is required for commercial usage.",
+					"Yes! Nubesti Recorder is 100% free for personal use. You can record and share locally with Studio Mode. A paid plan is required for commercial usage.",
 			},
 			{
 				question: "How long can I record for on the free version?",
@@ -267,9 +267,9 @@ export const homepageCopy: HomePageCopy = {
 					"You can record for 5 minutes on the free version. After that, you'll need to upgrade to a paid plan.",
 			},
 			{
-				question: "How does Cap AI work?",
+				question: "How does Nubesti AI work?",
 				answer:
-					"Cap AI is a powerful tool that can be used to generate titles, summaries, clickable chapters, and transcriptions for your recordings. It's available for all Cap Pro users and has no usage limits.",
+					"Nubesti AI is a powerful tool that can be used to generate titles, summaries, clickable chapters, and transcriptions for your recordings. It's available for all Nubesti Pro users and has no usage limits.",
 			},
 			{
 				question: "How is Cap different from Loom?",
@@ -284,7 +284,7 @@ export const homepageCopy: HomePageCopy = {
 			{
 				question: "Do you offer team plans?",
 				answer:
-					"Yes! Cap Pro includes team workspaces where you can organize recordings, manage permissions, and collaborate. Volume discounts available for teams over 10 users. Contact us for custom enterprise features.",
+					"Yes! Nubesti Pro includes team workspaces where you can organize recordings, manage permissions, and collaborate. Volume discounts available for teams over 10 users. Contact us for custom enterprise features.",
 			},
 			{
 				question: "Which platforms do you support?",
@@ -292,26 +292,26 @@ export const homepageCopy: HomePageCopy = {
 					"Native desktop apps for macOS (Apple Silicon & Intel) and Windows. View your shareable linkes from anywhere.",
 			},
 			{
-				question: "Can I use Cap for commercial purposes?",
+				question: "Can I use Nubesti Recorder for commercial purposes?",
 				answer:
-					"Absolutely! Any paid plan (Desktop License or Cap Pro) includes full commercial usage rights. Use Cap for client work, sell courses, or embed recordings anywhere. The free version is for personal use only.",
+					"Absolutely! Any paid plan (Desktop License or Nubesti Pro) includes full commercial usage rights. Use Nubesti Recorder for client work, sell courses, or embed recordings anywhere. The free version is for personal use only.",
 			},
 			{
 				question: "Is my data secure?",
 				answer:
-					"Security is core to Cap. As an open source project, our code is fully auditable and transparent - you can see exactly how your data is handled. End-to-end encryption for cloud storage, option to use your own infrastructure, and community-driven security reviews keep your content safe.",
+					"Security is core to Nubesti Recorder. Our code is fully auditable and transparent - you can see exactly how your data is handled. End-to-end encryption for cloud storage, option to use your own infrastructure, and community-driven security reviews keep your content safe.",
 			},
 			{
 				question: "What about GDPR/HIPAA compliance?",
 				answer:
-					"Cap Pro supports custom S3 buckets in any region for GDPR compliance. For HIPAA and other regulations, our self-hosted option gives you complete control. We also offer signed BAAs for enterprise customers.",
+					"Nubesti Pro supports custom S3 buckets in any region for GDPR compliance. For HIPAA and other regulations, our self-hosted option gives you complete control. We also offer signed BAAs for enterprise customers.",
 			},
 		],
 	},
 	readyToGetStarted: {
 		title: "Ready to upgrade how you communicate?",
 		buttons: {
-			primary: "Upgrade to Cap Pro",
+			primary: "Upgrade to Nubesti Pro",
 			secondary: "Download for free",
 		},
 	},

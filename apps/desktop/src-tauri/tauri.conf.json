@@ -1,8 +1,8 @@
 {
 	"$schema": "https://schema.tauri.app/config/2",
-	"productName": "Cap - Development",
-	"identifier": "so.cap.desktop.dev",
-	"mainBinaryName": "Cap - Development",
+	"productName": "Nubesti Recorder - Development",
+	"identifier": "com.nubesti.recorder.dev",
+	"mainBinaryName": "Nubesti Recorder - Development",
 	"build": {
 		"beforeDevCommand": "pnpm localdev",
 		"devUrl": "http://localhost:3002",
@@ -30,7 +30,7 @@
 		"updater": { "active": false, "pubkey": "" },
 		"deep-link": {
 			"desktop": {
-				"schemes": ["cap-desktop"]
+				"schemes": ["nubesti-recorder"]
 			}
 		}
 	},
@@ -81,9 +81,9 @@
 		},
 		"fileAssociations": [
 			{
-				"ext": ["cap"],
-				"name": "Cap Project",
-				"mimeType": "application/x-cap-project",
+				"ext": ["nrec"],
+				"name": "Nubesti Recorder Project",
+				"mimeType": "application/x-nubesti-recorder-project",
 				"role": "Editor"
 			}
 		]
