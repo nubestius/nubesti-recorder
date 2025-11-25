@@ -24,6 +24,10 @@ COPY --from=deps /app/apps/web/node_modules ./apps/web/node_modules
 COPY --from=deps /app/packages ./packages
 COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
+
+ARG NEXT_PUBLIC_WEB_URL=https://recorder.nubesti.com
+ENV NEXT_PUBLIC_WEB_URL=$NEXT_PUBLIC_WEB_URL
+
 RUN pnpm --filter @cap/web build
 
 FROM base AS runner
