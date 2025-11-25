@@ -21,8 +21,8 @@ services:
       S3_INTERNAL_ENDPOINT: https://s3.${WASABI_REGION}.wasabisys.com
       S3_PATH_STYLE: "true"
       NODE_ENV: production
-    ports:
-      - "3000:3000"
+    expose:
+      - "3000"
     depends_on:
       mysql:
         condition: service_healthy
