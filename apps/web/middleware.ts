@@ -40,6 +40,7 @@ export async function middleware(request: NextRequest) {
 	if (buildEnv.NEXT_PUBLIC_IS_CAP !== "true") {
 		if (
 			!(
+				path === "/" ||
 				path.startsWith("/s/") ||
 				path.startsWith("/middleware") ||
 				path.startsWith("/dashboard") ||
@@ -50,7 +51,24 @@ export async function middleware(request: NextRequest) {
 				path.startsWith("/invite") ||
 				path.startsWith("/self-hosting") ||
 				path.startsWith("/terms") ||
-				path.startsWith("/verify-otp")
+				path.startsWith("/privacy") ||
+				path.startsWith("/verify-otp") ||
+				path.startsWith("/download") ||
+				path.startsWith("/pricing") ||
+				path.startsWith("/features") ||
+				path.startsWith("/about") ||
+				path.startsWith("/faq") ||
+				path.startsWith("/blog") ||
+				path.startsWith("/docs") ||
+				path.startsWith("/tools") ||
+				path.startsWith("/embed") ||
+				path.startsWith("/screen-recorder") ||
+				path.startsWith("/free-screen-recorder") ||
+				path.startsWith("/loom-alternative") ||
+				path.startsWith("/solutions") ||
+				path.startsWith("/testimonials") ||
+				path.startsWith("/oss-friends") ||
+				path.startsWith("/student-discount")
 			) &&
 			process.env.NODE_ENV !== "development"
 		)
