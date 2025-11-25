@@ -4,24 +4,29 @@ import { ImageUploads } from "@cap/web-backend";
 import { Effect } from "effect";
 
 export const resolveCurrentUser = Effect.gen(function* () {
+	const user = yield* Effect.promise(() => getCurrentUser());
+	if (!user) return null;
+
 	const imageUploads = yield* ImageUploads;
 
-	return yield* Effect.promise(() => getCurrentUser()).pipe(
-		Effect.flatMap(
-			Effect.fn(function* (u) {
-				if (!u) return null;
-				return {
-					id: u.id,
-					name: u.name,
-					lastName: u.lastName,
-					defaultOrgId: u.defaultOrgId,
-					email: u.email,
-					imageUrl: u.image
-						? yield* imageUploads.resolveImageUrl(u.image)
-						: null,
-					isPro: userIsPro(u),
-				};
-			}),
-		),
-	);
-});
+	const imageUrl = user.image
+		? yield* imageUploads
+				.resolveImageUrl(user.image)
+				.pipe(Effect.catchAll(() => Effect.succeed(null)))
+		: null;
+
+	return {
+		id: user.id,
+		name: user.name,
+		lastName: user.lastName,
+		defaultOrgId: user.defaultOrgId,
+		email: user.email,
+		imageUrl,
+		isPro: userIsPro(user),
+	};
+}).pipe(
+	Effect.catchAll((error: unknown) => {
+		console.error("Error resolving current user:", error);
+		return Effect.succeed(null);
+	})
+);
