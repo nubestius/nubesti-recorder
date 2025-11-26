@@ -15,7 +15,7 @@ COPY packages/web-backend/package.json ./packages/web-backend/
 COPY packages/web-domain/package.json ./packages/web-domain/
 COPY packages/tsconfig/package.json ./packages/tsconfig/
 COPY packages/config/package.json ./packages/config/
-RUN pnpm install --frozen-lockfile
+RUN pnpm install --no-frozen-lockfile
 
 FROM base AS builder
 WORKDIR /app
